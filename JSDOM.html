@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JSDOM</title> 
+
+    
+</head>
+<body>
+    
+    <h1 id="title">
+        JSDOM
+    </h1>
+    <p id="text"  class="paragraph">
+        testing
+    </p>
+    <p class="paragraph">
+        other text  
+    </p>
+    <button>
+        press me
+    </button>
+    <p>
+        test
+    </p>
+    <style>
+    .textgreen 
+    { color: green; 
+           font-weight: bold;
+    
+                   }
+    </style>
+    <a id="mylink" href="https://www.google.com" target="_blank">
+        google  
+    </a>
+
+    <script>
+        let mylink = document.getElementById("mylink"); 
+           mylink.href ="https://www.google.lk";
+           mylink.innerHTML  = "googlelk";
+
+           //mylink.style.color = "red";
+
+           mylink.classList .remove("textgreen");
+           
+
+
+    </script>
+</body>
+</html>
